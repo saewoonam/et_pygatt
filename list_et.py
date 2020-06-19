@@ -16,7 +16,7 @@ if False:
 else:
     adapter = pygatt.BGAPIBackend()
     adapter.start()
-    devices = adapter.scan(run_as_root=True, timeout=3  )
+    devices = adapter.scan()
 # devices = adapter.scan(timeout=10  )
 et_devices = []
 for d in devices:
